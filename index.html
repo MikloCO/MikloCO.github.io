@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Olivia Mikler | Code sample</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="MainStyleSheet.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<body>
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+    id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>Olivia Mikler</b><br>Code sample</h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">The longest uncrossed knight's path</a>  
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Olivia Mikler</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay">
+  </div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-jumbo"><b>Olivia Mikler</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Code sample.</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+    </div>
+    <p>I am an ambitious creator & passionate problem solver that aims to further develop my skills within programming. </p>
+
+    <!-- Artificial Intelligence -->
+    <div class="w3-container" id="designers" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>The longest uncrossed knight's path.</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>"The longest uncrossed (or nonintersecting) knight's path is a mathematical problem involving a knight on the
+        standard 8×8 chessboard or, more generally, on a square n×n board.
+        The problem is to find the longest path the knight can take on the given board, such that the path does not
+        intersect itself." - Wikipedia.</p>
+      <p>In my solution below I create a backtracking algorithm where the knight travels across a chessboard (coordinate system) stepping
+        on each square uniquely, the path represented by numbers 0-62.</p>
+      <div class="w3-row-padding w3-grayscale">
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <video style="width:100%" controls>
+              <source
+                src="https://www.dropbox.com/s/6aip7q22f5l3w9w/Code_Presentation_Longest_Uncrossed_Knights_Path_audio.mp4?raw=1"
+                type="video/mp4">
+            </video>
+            <div class="w3-container" style="height: 141px">
+              <h3>Code Presentation</h3>
+              <p>In this video I explain my solution to the Longest Uncrossed backtracking algorithm works.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <img src="https://www.dropbox.com/s/qchy088ovzixuqg/AlgorithmGIF.gif?raw=1" alt="Jane" style="width:100%">
+            <div class="w3-container" style="height: 150px">
+              <h3>Demonstration in console</h3>
+              <p>On a computer with 16GB ram, i7 processor, the program takes 8-9 seconds to compile.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <img src="https://www.dropbox.com/s/f3341hc5hubjvn7/codeScreenDump.png?raw=1" alt="Mike" style="width:100%">
+            <div class="w3-container" style="height: 150px">
+              <h3>View Sourcecode</h3>
+              <p>You can view the source code <a href="https://www.dropbox.com/s/vyl4ntm7wj9ud1u/Program.cs?raw=1" target="_blank">here.</a></p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+          <section id="lab_social_icon_footer">
+            <!-- Include Font Awesome Stylesheet in Header -->
+            <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+            <div class="w3-container">
+                    <div class="text-center center-block w3-center">
+                          <a href="https://github.com/MikloCO" target="_blank"><i id="social-git" class="fa fa-github-square fa-3x social"></i></a>
+                          <a href="https://www.linkedin.com/in/olivia-mikler-320a15161/" target="_blank"><i id="social-ld" class="fa fa-linkedin-square fa-3x social"></i></a>
+                          <a href="mailto:olivia.maria.mikler@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                </div>
+            </div>
+       
+            </section>
+          
+      <script>
+        // Script to open and close sidebar
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+        }
+
+      </script>
+
+</body>
+
+</html>
