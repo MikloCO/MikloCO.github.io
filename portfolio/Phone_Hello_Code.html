@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Prototype code</title>
+    </head>
+    <body style="background-color: black;">
+        <pre>
+<span class="rowCount">1</span> using System.Collections;
+<span class="rowCount">2</span> using System.Collections.Generic;
+<span class="rowCount">3</span> using UnityEngine;
+<span class="rowCount">4</span> using UnityEngine.UI;
+<span class="rowCount">5</span> 
+<span class="rowCount">6</span> public class Phone_Hello : MonoBehaviour
+<span class="rowCount">7</span> {
+<span class="rowCount">8</span>	public GameObject bubble_1;
+<span class="rowCount">9</span>	public GameObject bubble_2;
+<span class="rowCount">10</span>	public GameObject bubble_3;
+<span class="rowCount">11</span>	public GameObject bubble_4;
+<span class="rowCount">12</span>
+<span class="rowCount">13</span>	public GameObject choice_1;
+<span class="rowCount">14</span>	public GameObject choice_2;
+<span class="rowCount">15</span>	private int public_i;
+<span class="rowCount">16</span>	private int public_j;
+<span class="rowCount">17</span>	private int cass_i;
+<span class="rowCount">18</span>    
+<span class="rowCount">19</span>    <span class="comment">//Arrr//  0 | 1</span>
+<span class="rowCount">20</span>    <span class="comment">// Choice 1:    left array.</span> 
+<span class="rowCount">21</span>    <span class="comment">// Choice 2:    right array</span>
+<span class="rowCount">22</span>    string[] CassTalks = new string[] { 
+<span class="rowCount">23</span>    "Heyy :-)"                                 , "Do about what??",
+<span class="rowCount">24</span>    "Sorry, can't, stuDYING at the moment. :')",  "Don't you have homework to do lol"
+<span class="rowCount">25</span>    };
+<span class="rowCount">26</span>
+<span class="rowCount">27</span>    string[] AlexTalks = new string[] {
+<span class="rowCount">28</span>    "Hey Cass"                                  , "I don't know what to do",
+<span class="rowCount">29</span>    "Can you come over?"                        , "I am bored"
+<span class="rowCount">30</span>    };
+<span class="rowCount">31</span>    
+<span class="rowCount">32</span>    void Start()
+<span class="rowCount">33</span>    {	
+<span class="rowCount">34</span>   	choice_1. GetComponentInChildren<Text>().text  = AlexTalks[0];
+<span class="rowCount">35</span>    	choice_2. GetComponentInChildren<Text>().text  = AlexTalks[1];	
+<span class="rowCount">36</span>    	GameObject g = GameObject.Find("Dialouge");
+<span class="rowCount">37</span>   }
+<span class="rowCount">38</span>
+<span class="rowCount">39</span>
+<span class="rowCount">40</span>  <span class="comment">// Choice 1 bubble</span>
+<span class="rowCount">41</span>   public void Choice_1() {
+<span class="rowCount">42</span>   	string temp = choice_1.GetComponentInChildren<Text>().text;
+<span class="rowCount">43</span>    	if(!bubble_1.active) {
+<span class="rowCount">44</span>   		bubble1(temp);
+<span class="rowCount">45</span>   		bubble2(0);
+<span class="rowCount">46</span>   		return;
+<span class="rowCount">47</span>   	}
+<span class="rowCount">48</span>  	if(!bubble_3.active) {
+<span class="rowCount">49</span>   		bubble3(temp);
+<span class="rowCount">50</span>    		bubble4(2);
+<span class="rowCount">51</span>   		//return;
+<span class="rowCount">52</span>    	}
+<span class="rowCount">53</span>   	if(bubble_3.active) {
+<span class="rowCount">54</span>
+<span class="rowCount">55</span>    	choice_1.SetActive(false);
+<span class="rowCount">56</span>    	choice_2.SetActive(false);
+<span class="rowCount">57</span>    	}
+<span class="rowCount">58</span>   }
+<span class="rowCount">59</span>
+<span class="rowCount">60</span> <span class="comment">// Choice 2 bubble</span>
+<span class="rowCount">61</span>   public void Choice_2() {
+<span class="rowCount">62</span>   string temp = choice_2.GetComponentInChildren<Text>().text;
+<span class="rowCount">63</span>		if(!bubble_1.active) {
+<span class="rowCount">66</span>   		bubble1(temp);
+<span class="rowCount">67</span>   		bubble2(1); 
+<span class="rowCount">68</span>    		return;
+<span class="rowCount">69</span>    	}
+<span class="rowCount">70</span> 
+<span class="rowCount">71</span>    	if(!bubble_3.active) {
+<span class="rowCount">72</span>    		bubble3(temp);
+<span class="rowCount">73</span>    		bubble4(3);
+<span class="rowCount">74</span>     	}
+<span class="rowCount">75</span>   	if(bubble_3.active) {	
+<span class="rowCount">76</span>           choice_1.SetActive(false);
+<span class="rowCount">77</span>            choice_2.SetActive(false);
+<span class="rowCount">78</span>     	}
+<span class="rowCount">79</span>    }
+<span class="rowCount">80</span> 
+<span class="rowCount">81</span> 	<span class="comment">//Alex talks</span>
+<span class="rowCount">82</span>      public void bubble1(string temp) {
+<span class="rowCount">83</span>     	bubble_1.SetActive(true);
+<span class="rowCount">84</span>    	bubble_1.GetComponentInChildren<Text>().text = temp;
+<span class="rowCount">85</span>    	choice_1.GetComponentInChildren<Text>().text = AlexTalks[public_i + 2];
+<span class="rowCount">86</span>     	choice_2.GetComponentInChildren<Text>().text = AlexTalks[public_j + 3];
+<span class="rowCount">87</span>    }
+<span class="rowCount">88</span> 
+<span class="rowCount">89</span>    <span class="comment">//Which step in conversation?</span>
+<span class="rowCount">90</span>     private void bubble2(int index) {
+<span class="rowCount">91</span>     	
+<span class="rowCount">92</span>    	bubble_2.SetActive(true);
+<span class="rowCount">93</span>    	bubble_2. GetComponentInChildren<Text>().text  = CassTalks[index];
+<span class="rowCount">94</span>     }
+<span class="rowCount">95</span> 
+<span class="rowCount">96</span>     <span class="comment">//Cass talks</span>
+<span class="rowCount">97</span>     private void bubble3(string temp) {
+<span class="rowCount">98</span>    	bubble_3.SetActive(true); 	
+<span class="rowCount">99</span>     	bubble_3.GetComponentInChildren<Text>().text = temp;
+<span class="rowCount">100</span>     	choice_1.GetComponentInChildren<Text>().text = AlexTalks[public_i];
+<span class="rowCount">101</span>     	choice_2.GetComponentInChildren<Text>().text = AlexTalks[public_j];
+<span class="rowCount">102</span>     }
+<span class="rowCount">103</span>     <span class="comment">//Cass talks</span>
+<span class="rowCount">104</span>     private void bubble4(int index) {
+<span class="rowCount">105</span>    	bubble_4.SetActive(true);
+<span class="rowCount">106</span>    	bubble_4. GetComponentInChildren<Text>().text = CassTalks[index];
+<span class="rowCount">107</span>     }
+<span class="rowCount">108</span> }
+</pre>
+<style>
+    pre {
+    background: #1e1e1e;
+    border: 1px solid #c9d4b1;
+    border-left: 3px solid #ce834a;
+    color: #7fc1d3;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+.rowCount {
+    color: #bebcbc;
+}
+.comment {
+            color: #438a55;
+        }
+</style>
+    </body>
+</html>
