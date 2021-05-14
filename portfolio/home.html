@@ -9,6 +9,8 @@
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <body>
 
+
+
   <!-- Sidebar/menu -->
   <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
     id="mySidebar"><br>
@@ -18,11 +20,12 @@
       <h3 class="w3-padding-64"><b>Olivia Mikler</b><br>Developer & Artist</h3>
     </div>
     <div class="w3-bar-block">
-      <a href="home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
       <a href="#sideprojects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Side projects</a>
       <a href="#algorithms" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Algorithms</a>
       <a href="#groupprojects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Group projects</a>
     </div>
+
 
     <div class="w3-container">
       <h3 class="w3-padding-64" style="text-align: center;">Program proficiency</h3>
@@ -38,8 +41,6 @@
       <br>
 
     </div>
-
-    
   </nav>
 
   <!-- Top menu on small screens -->
@@ -57,7 +58,12 @@
 
     <!-- Header -->
     <div class="w3-container" style="margin-top:80px" id="showcase">
-      <h1 class="w3-jumbo"><b>Olivia Mikler</b></h1>
+      <h1 class="w3-jumbo"><b>Olivia Mikler</b>
+          <img class="w3-center w3-bar-item" src="https://www.dropbox.com/s/fwdzaresqcyospb/cpp80.png?raw=1" style="width:80px;">
+          <img class="w3-center w3-bar-item" src="https://www.dropbox.com/s/hbsupekj6syw00w/cSharp.png?raw=1" style="width:80px;">
+      </h1>
+        
+      
       <h1 class="w3-xxxlarge w3-text-red"><b>Portfolio.</b></h1>
       <hr style="width:50px;border:5px solid red" class="w3-round">
       <h2>I am an ambitious creator that loves art and programming with an devotion to sucess in the field.</h2>
@@ -68,19 +74,25 @@
     <div class="w3-container" id="sideprojects" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Side projects.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>I have modelled a scene inspired by the Japanese culture. This is a simple project where I have created a puzzle for the player to solve. Objects are picked up using raytracing.</p>
+    <p>I have created a game with 2 levels, using C++ where I have created some of the implementations in blueprints. The environment is modelled and 
+      textured by me using Maya and substance painter. I also used the UE4 particle system editor to create the portal. The characters, sound effects, 
+      animations and muzzle flash derive from the UE4 asset store. The first level consists of a single APawn, where the player can pick up and throw objects. 
+      The second level consists of a player ACharacter where the player can take and deal damage and has a health bar. If you want to find out how I have worked in more technical detail you 
+      are free to check out my project documentation (project post mortem)
+      <u style="cursor:grab;" onclick="window.open('https://www.dropbox.com/s/1zwtrxkoe7ix40f/Project%20post-mortem.pdf?raw=1', '_blank');"><mark style="background-color:rgb(255, 242, 168)">here</mark></u>.
+    </p>
     <h2 class="w3-text-black">Building Escape</h2>
     <div class="w3-row-padding">
         <div class="w3-col m4 w3-margin-bottom">
           <div class="w3-light-grey">
             <video style="width:100%;" controls>
               <source
-              src="https://www.dropbox.com/s/foa5hp6s8syy215/Buildingescapedemo.m4v?raw=1"
+              src="https://www.dropbox.com/s/yh9crqjjg2gcaav/UpdatedBuildingEscape.mp4?raw=1"
               type="video/mp4">
           </video>
           <div class="w3-container">
             <h3>Quick demo video</h3>
-            <p>The player can pick up objects and use middle mouse to hint afforance. Also the player is teleported to the next level that I am currently working on.</p>
+            <p>The player can pick up objects and use middle mouse to hint afforance. Player can also shoot enemies. (0:37)</p>
             <br>
           </div>
         </div>
@@ -95,7 +107,7 @@
           </div>       
           <div class="w3-container">
             <h3>In-game screenshoot</h3>
-            <p>In the current state of the scene there is a volumetric fog and lightning setup. All assets are created in Maya by me.</p>
+            <p>The tokyo inspired enviorment is created in Maya by me. Character + animations derive from UE4 store. I have used UE4 engine.</p>
             <br>
           </div>
         </div>
@@ -252,6 +264,51 @@
       </div>
     </div>
   </div>
+
+  <!-- Kattis addition-->
+  
+<h2 class="w3-text-black">Solving "No duplicates" on Katits</h2>
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <video style="width:100%" controls>
+          <source
+            src="https://www.dropbox.com/s/eejy7fslbebhwuj/Solvingprobleminkattis_edited.m4v?raw=1"
+            type="video/mp4">
+        </video>
+        <div class="w3-container">
+          <h3>Here I explain my thoughtprocess</h3>
+          <p>I wanted to give insight on how I tackle problems and show coding style. I am using C++ and visual studio.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-display-container mySlides">
+        <img src="https://www.dropbox.com/s/aft4adxyyj2ukij/KattisCodeNoDuplicates.gif?raw=1" alt="Jane" style="width:100%">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>C++</p>
+        </div>
+      </div>
+        <div class="w3-container">
+          <h3>Problem: No Duplicates</h3>
+          <p>I use map and vector to solve this problem.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://www.dropbox.com/s/db0ixu4f4gh62qp/kattisCode.png?raw=1" alt="kattis" style="width:100%">
+        <div class="w3-container">
+          <h3>View Sourcecode</h3>
+          <p>If you are curious of the code you can view it on <u style="cursor:grab;" onclick="window.open('https://github.com/MikloCO/Kattis/blob/main/NoDupl.cpp', '_blank');">GitHub</u>.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---->
 </div>
 
 
