@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Olivia Mikler | Code sample</title>
+<title>Olivia Mikler Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,17 +9,37 @@
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <body>
 
+
+
   <!-- Sidebar/menu -->
   <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
     id="mySidebar"><br>
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
       style="width:100%;font-size:22px">Close Menu</a>
     <div class="w3-container">
-      <h3 class="w3-padding-64"><b>Olivia Mikler</b><br>Code sample</h3>
+      <h3 class="w3-padding-64"><b>Olivia Mikler</b><br>Developer & Artist</h3>
     </div>
     <div class="w3-bar-block">
-      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">The longest uncrossed knight's path</a>  
+      <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="#sideprojects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Side projects</a>
+      <a href="#algorithms" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Algorithms</a>
+      <a href="#groupprojects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Group projects</a>
+    </div>
+
+
+    <div class="w3-container">
+      <h3 class="w3-padding-64" style="text-align: center;">Program proficiency</h3>
+      <img class="w3-center w3-bar-item" src="https://www.dropbox.com/s/jawb3rmcfvux2k8/maya.png?raw=1" style="width:80px; display: block; margin:auto;">
+      <br>
+      <img class="w3-center w3-bar-item" src="https://www.dropbox.com/s/xymenggqkr088xm/Photoshop.png?raw=1" style="width: 80px; display: block; margin:auto;">
+      <br>
+      <img class="w3-center w3-bar-item" src="https://www.dropbox.com/s/4vr114vqhnb48k3/ue4.png?raw=1" style="width: 80px; display: block; margin:auto;">
+      <br>
+      <img class="w3-center w3-bar-item" src="https://www.dropbox.com/s/d181dkdex9b2mii/unity.png?raw=1" style="width: 80px; display: block; margin:auto;">
+      <br>
+      <img class="w3-center w3-bar-item" src="https://www.dropbox.com/s/y8nqhfokt9vm7xe/VS.png?raw=1" style="width: 80px; display: block; margin:auto;">
+      <br>
+
     </div>
   </nav>
 
@@ -31,31 +51,137 @@
 
   <!-- Overlay effect when opening sidebar on small screens -->
   <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-    id="myOverlay">
-  </div>
+    id="myOverlay"></div>
 
   <!-- !PAGE CONTENT! -->
   <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
     <!-- Header -->
     <div class="w3-container" style="margin-top:80px" id="showcase">
-      <h1 class="w3-jumbo"><b>Olivia Mikler</b></h1>
-      <h1 class="w3-xxxlarge w3-text-red"><b>Code sample.</b></h1>
+      <h1 class="w3-jumbo"><b>Olivia Mikler</b>
+          <img class="w3-center w3-bar-item" src="https://www.dropbox.com/s/fwdzaresqcyospb/cpp80.png?raw=1" style="width:80px;">
+          <img class="w3-center w3-bar-item" src="https://www.dropbox.com/s/hbsupekj6syw00w/cSharp.png?raw=1" style="width:80px;">
+      </h1>
+        
+      
+      <h1 class="w3-xxxlarge w3-text-red"><b>Portfolio.</b></h1>
       <hr style="width:50px;border:5px solid red" class="w3-round">
-       <p>I am an ambitious creator & passionate problem solver that aims to further develop my skills within programming. </p>
+      <h2>I am an ambitious creator that loves art and programming with an devotion to sucess in the field.</h2>
     </div>
-   
 
-    <!-- Artificial Intelligence -->
-    <div class="w3-container" id="designers" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>The longest uncrossed knight's path.</b></h1>
+     
+<!-- Side projects-->
+    <div class="w3-container" id="sideprojects" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Side projects.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>I have created a game with 2 levels, using C++ where I have created some of the implementations in blueprints. The environment is modelled and 
+      textured by me using Maya and substance painter. I also used the UE4 particle system editor to create the portal. The characters, sound effects, 
+      animations and muzzle flash derive from the UE4 asset store. The first level consists of a single APawn, where the player can pick up and throw objects. 
+      The second level consists of a player ACharacter where the player can take and deal damage and has a health bar. If you want to find out how I have worked in more technical detail you 
+      are free to check out my project documentation (project post mortem)
+      <u style="cursor:grab;" onclick="window.open('https://www.dropbox.com/s/1zwtrxkoe7ix40f/Project%20post-mortem.pdf?raw=1', '_blank');"><mark style="background-color:rgb(255, 242, 168)">here</mark></u>.
+    </p>
+    <h2 class="w3-text-black">Building Escape</h2>
+    <div class="w3-row-padding">
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <video style="width:100%;" controls>
+              <source
+              src="https://www.dropbox.com/s/yh9crqjjg2gcaav/UpdatedBuildingEscape.mp4?raw=1"
+              type="video/mp4">
+          </video>
+          <div class="w3-container">
+            <h3>Quick demo video</h3>
+            <p>The player can pick up objects and use middle mouse to hint afforance. Player can also shoot enemies. (0:37)</p>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <div class="w3-display-container mySlides">
+          <img src="https://www.dropbox.com/s/4534dbijgi1p7cx/UE4Screen.png?raw=1" alt="Jane" style="width:100%;">
+          <div class="w3-display-topleft w3-container w3-black">
+            <p>C++</p>
+          </div>
+          </div>       
+          <div class="w3-container">
+            <h3>In-game screenshoot</h3>
+            <p>The tokyo inspired enviorment is created in Maya by me. Character + animations derive from UE4 store. I have used UE4 engine.</p>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="https://www.dropbox.com/s/owgou9lvr8srf1a/codeScreenDumpUgrabber.png?raw=1" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>View Sourcecode</h3>
+            <p>I have used Github Source control during the code implementation phase. Please view <u style="cursor:grab;" onclick="window.open('https://github.com/MikloCO/BuildingEscape', '_blank');">Github</u> to view my workflow and if you are curious of my coding style.</p>  
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <h2 class="w3-text-black">Texting NPC prototype</h2>
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <video style="width:100%" controls>
+          <source
+            src="https://www.dropbox.com/s/72w4j8sdpc5bgwz/Gameplayidea%20Phone-1.mp4?raw=1"
+            type="video/mp4">
+        </video>
+        <div class="w3-container">
+          <h3>Quick demo video</h3>
+          <p>I wondered how it could look like in a video game to text other NPC's so I created a quick prototype where user can choose different dialouge options and NPC responds accordingly.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-display-container mySlides">
+        <img src="https://www.dropbox.com/s/o7x6btfp49ld4rc/CodeExplanationPhone.png?raw=1" alt="Jane" style="width:100%">
+        <div class="w3-display-topleft w3-container w3-black">
+          <p>C#</p>
+        </div>
+      </div>
+        <div class="w3-container">
+          <h3>In-game screenshoot</h3>
+          <p>On <u style="cursor:grab;" onclick="window.open('explanationGameplay.html', '_blank');">this page</u> you can view my explanation of the function in code.</p>
+          <br><br>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://www.dropbox.com/s/vhxesojgeeg5ovv/CodePhonePrototype.png?raw=1" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>View Sourcecode</h3>
+          <p>If you are curious of the code you can view it <u style="cursor:grab;" onclick="window.open('Phone_Hello_Code.html', '_blank');">here</u>.</p>
+          <br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+    <!-- Algorithms -->
+    <div class="w3-container" id="algorithms" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Algorithms.</b></h1>
       <hr style="width:50px;border:5px solid red" class="w3-round">
+      <h2 class="w3-text-black">Assignment from Artificial Intelligence | Uppsala University</h2>
       <p>"The longest uncrossed (or nonintersecting) knight's path is a mathematical problem involving a knight on the
         standard 8×8 chessboard or, more generally, on a square n×n board.
         The problem is to find the longest path the knight can take on the given board, such that the path does not
         intersect itself." - Wikipedia.</p>
-      <p>In my solution below I create a backtracking algorithm where the knight travels across a chessboard (coordinate system) stepping
-        on each square uniquely, the path represented by numbers 0-63.</p>
+      <p>In my solution below I create a backtracking algorithm where the knight travels across the chessboard stepping
+        on each square uniquely, represented by numbers 0-62.</p>
       <div class="w3-row-padding w3-grayscale">
         <div class="w3-col m4 w3-margin-bottom">
           <div class="w3-light-grey">
@@ -72,10 +198,15 @@
         </div>
         <div class="w3-col m4 w3-margin-bottom">
           <div class="w3-light-grey">
+            <div class="w3-display-container mySlides">
             <img src="https://www.dropbox.com/s/qchy088ovzixuqg/AlgorithmGIF.gif?raw=1" alt="Jane" style="width:100%">
+            <div class="w3-display-bottomleft w3-container w3-black">
+              <p>C#</p>
+            </div>
+          </div>
             <div class="w3-container" style="height: 150px">
               <h3>Demonstration in console</h3>
-              <p>On a computer with 16GB ram, i7 processor, the program takes 8-9 seconds to compile.</p>
+              <p>On a computer with 16GB ram the program takes 5-9 seconds to compile.</p>
               <br>
             </div>
           </div>
@@ -85,27 +216,166 @@
             <img src="https://www.dropbox.com/s/f3341hc5hubjvn7/codeScreenDump.png?raw=1" alt="Mike" style="width:100%">
             <div class="w3-container" style="height: 150px">
               <h3>View Sourcecode</h3>
-              <p>You can view the source code <a href="https://www.dropbox.com/s/vyl4ntm7wj9ud1u/Program.cs?raw=1" target="_blank">here.</a></p>
+              <p>You can view the source code <u style="cursor:grab;" onclick="window.open('AI_Code.html', '_blank');">here</u>.</p>
               <br>
             </div>
           </div>
         </div>
       </div>
+
+<h2 class="w3-text-black">A tool that converts text to JSTL</h2>
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <video style="width:100%" controls>
+          <source
+            src="https://www.dropbox.com/s/kiraavx5f8800bv/TextToJSTLconverter.mp4?raw=1"
+            type="video/mp4">
+        </video>
+        <div class="w3-container">
+          <h3>Video explaning my tool.</h3>
+          <p>I wanted to automate formatting lists in text into JSTL / HTML code. So I used Java to make a program that distinguishes lists and also tags the content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-display-container mySlides">
+        <img src="https://www.dropbox.com/s/0ddtwz4br8cqkoa/TextToJSTLConverter.gif?raw=1" alt="Jane" style="width:100%">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Java</p>
+        </div>
+      </div>
+        <div class="w3-container">
+          <h3>My tool in action</h3>
+          <p>The tool is coded in Java and accepts input as a list if sentence or word starts with either • or - and will convert lists in text into JSTL code.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://www.dropbox.com/s/w9gg4moa0afv2xy/CodeViewJSTL.png?raw=1" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>View Sourcecode</h3>
+          <p>If you are curious of the code you can view it on <u style="cursor:grab;" onclick="window.open('https://github.com/MikloCO/TextToJSTLConverter/blob/main/Main.java', '_blank');">GitHub</u>.</p>
+          <br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kattis addition-->
+  
+<h2 class="w3-text-black">Solving "No duplicates" on Katits</h2>
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <video style="width:100%" controls>
+          <source
+            src="https://www.dropbox.com/s/eejy7fslbebhwuj/Solvingprobleminkattis_edited.m4v?raw=1"
+            type="video/mp4">
+        </video>
+        <div class="w3-container">
+          <h3>Here I explain my thoughtprocess</h3>
+          <p>I wanted to give insight on how I tackle problems and show coding style. I am using C++ and visual studio.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-display-container mySlides">
+        <img src="https://www.dropbox.com/s/aft4adxyyj2ukij/KattisCodeNoDuplicates.gif?raw=1" alt="Jane" style="width:100%">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>C++</p>
+        </div>
+      </div>
+        <div class="w3-container">
+          <h3>Problem: No Duplicates</h3>
+          <p>I use map and vector to solve this problem.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://www.dropbox.com/s/db0ixu4f4gh62qp/kattisCode.png?raw=1" alt="kattis" style="width:100%">
+        <div class="w3-container">
+          <h3>View Sourcecode</h3>
+          <p>If you are curious of the code you can view it on <u style="cursor:grab;" onclick="window.open('https://github.com/MikloCO/Kattis/blob/main/NoDupl.cpp', '_blank');">GitHub</u>.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---->
 </div>
 
+
+
+      <div class="w3-container" id="groupprojects" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Group projects - University</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>During my time at University I got the chance to work closely with other game development students in our
+          project based courses "Mobile applications" and "Game mechanics".
+        </p>
+        <p>Both games are developed in the Unity Engine.</p>
+      </div>
+      
+  
+
+     
+      <div class="w3-row-padding">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-light-grey w3-center">
+            <li class="w3-black w3-xlarge w3-padding-32">Mobile Game | "Space Pupper"</li>
+            <div class="formatBox">
+              <video controls style="width:100%;height:338px;margin-top:16px" >
+                <source
+                  src="https://www.dropbox.com/s/3j2fw3112ew86v5/SpacePupper.mp4?raw=1"
+                  type="video/mp4"
+                  >
+              </video>
+            </div>
+            <li class="w3-light-grey w3-padding-24">
+              <a href="https://github.com/MikloCO/UnityProjectSpacePuppy" target="_blank"><button class="w3-button w3-dark-grey w3-padding-large w3-hover-black">Project source</button></a>
+            </li>
+          </ul>
+        </div>
+            
+        <div class="w3-half">
+          <ul class="w3-ul w3-light-grey w3-center">
+            <li class="w3-black w3-xlarge w3-padding-32">PC Game | "Jeniah"</li>
+             <div class="formatBox">
+              <video controls style="width:100%;height:338px;margin-top:16px" >
+                <source
+                  src=" https://www.dropbox.com/s/w9kxaqd0xjvmtlg/Enviormental_artist%2C%20University%20Example%20in%20course%20SPM.mp4?raw=1"
+                  type="video/mp4"
+                  >
+              </video>
+            </div>
+            <li class="w3-light-grey w3-padding-24">
+              <a href="https://github.com/BMedkouri/SPM-Grupp05-VT19" target="_blank"><button class="w3-button w3-dark-grey w3-padding-large w3-hover-black">Project source</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
           <section id="lab_social_icon_footer">
             <!-- Include Font Awesome Stylesheet in Header -->
             <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
             <div class="w3-container">
                     <div class="text-center center-block w3-center">
-                          <a href="https://github.com/MikloCO" target="_blank"><i id="social-git" class="fa fa-github-square fa-3x social"></i></a>
-                          <a href="https://www.linkedin.com/in/olivia-mikler-320a15161/" target="_blank"><i id="social-ld" class="fa fa-linkedin-square fa-3x social"></i></a>
+                      <a href="https://github.com/MikloCO"><i id="social-gh" class="fa fa-github-square fa-3x social"></i></a>
+                      <a href="https://www.artstation.com/oliviamikler"><i id="social-as"><img class="fa-2x social" id="artstationIcon" src="https://www.dropbox.com/s/r2ad3o39xcm3pwu/artstation_logo.png?raw=1"></i></a>
+                      <a href="https://www.linkedin.com/in/olivia-mikler-320a15161/"><i id="social-ld" class="fa fa-linkedin-square fa-3x social"></i></a>
+                          
                           
                 </div>
             </div>
        
             </section>
+
           
       <script>
         // Script to open and close sidebar
