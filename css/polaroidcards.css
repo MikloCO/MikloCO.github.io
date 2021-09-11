@@ -1,0 +1,175 @@
+@media only screen and (min-width: 992px) {
+#mutebuttonfps,
+#mutebuttonpolaroid,
+#mutebuttonknight
+{
+  border: medium none;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  position: absolute;
+  padding: 8px 16px;
+  margin: auto;
+  top: 35%;
+  left: 40%;
+  height: 100px;
+}
+
+
+.stickers {
+  height: 55px;
+  clear: left;
+  float: right;
+  padding-right: 10px;  
+}
+
+.cardborder p 
+{
+text-align: center;
+margin-left: 15%;
+}
+
+
+.card {
+    text-align: center;
+    margin: 2px;
+    width: 670px;
+    display: none;
+    cursor: pointer;
+  }
+
+  .hide 
+  {
+    display: block;
+  }
+
+  .show {
+    display: block;
+  }
+  
+
+  .card:hover
+  {
+    transition: all .3s ease-in-out; 
+    transform:scale(1.05);
+  }
+
+  .card:not(:hover) 
+  {
+    transition: all .3s ease-out; 
+    transform:scale(1);
+  }
+
+
+.polaroid
+{
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    border: 10px solid white;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.polaroid:hover
+{
+  background-color: rgb(255, 253, 240);
+  border: 10px solid rgb(255, 253, 240);
+}
+
+.cardborder p
+{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+
+}
+
+.groupcontentonpage
+{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-left: 300px;
+}
+
+
+
+.horizontal-flex-container
+ {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .arrow
+  {
+    height: 70px;
+    width: 70px;
+    display: inline-block;    
+    position: relative;
+    top: 300px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    
+    
+  } 
+  .right
+  {
+    background-image: url('/Media/Icons/InteractiveIcons/arrow.png');
+    background-size: 60px;
+    height:120px;
+    width:60px;
+    
+  }
+  .right:hover
+  {
+    background-image: url('/Media/Animations/arrow_animated.gif');
+    background-size: 60px;
+    height:120px;
+    width:60px;
+    cursor: pointer;
+  }
+
+  .left
+  {
+    background-image: url('/Media/Icons/InteractiveIcons/arrow.png');
+    background-size: 60px;
+    height:120px;
+    width:60px;
+    transform: scaleX(-1);
+  }
+  .left:hover
+  {
+    background-image: url('/Media/Animations/arrow_animated.gif');
+    background-size: 60px;
+    height:120px;
+    width:60px;
+    transform: scaleX(-1);
+    cursor: pointer;
+  }
+  
+  .wrapper-div .img-top
+  {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.stickerbuttons
+{
+  border: none;
+  background-color: rgb(41, 41, 41);
+  color: rgb(228, 228, 228);
+  width: 100%;
+  display: none;
+  height: 30px;
+}
+
+.stickerbuttons:hover
+{
+  background-color: rgb(255, 193, 100);
+  color: rgb(15, 15, 15);
+  cursor: pointer;
+  font-style: oblique;
+}
+}
