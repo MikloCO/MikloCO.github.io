@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Olivia Mikler | Home</title>
+    <meta name="author" content="Olivia Mikler">
+    <script src="https://kit.fontawesome.com/32cfb77157.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/main-stylesheet.css">
+    <link rel="stylesheet" href="css/polaroidcards.css">
+    <link rel="stylesheet" href="css/mobile_layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Noto+Sans+JP:wght@500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Manrope:wght@400;500&family=Noto+Sans+JP:wght@100;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Lato:wght@300&family=Manrope:wght@400;500&family=Noto+Sans+JP:wght@100;300;900&family=Sarabun:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&family=Indie+Flower&family=Julius+Sans+One&family=Poppins:wght@200&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Desktop -->
+   
+    <aside id="desktop">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close menu</a>
+        <h1 class="asideheaderfont">Olivia Mikler</h1>
+        <div class="container4">
+            <img id="profilepicture" src="/Media/ProfilePicture/me_profile.png" alt="Avatar" width="200" height="200">
+            <div class="overlay">
+                <div class="ingress">Passionate developer</div>
+            </div>
+        </div>
+        
+        <h1 class="asideheaderfont">BSc Game Development</h1>
+        <hr id="asideline">
+
+        <div id="contentFilterGroup">
+            <h2 id="filteronskill">FILTER ON SKILL</h2>
+            <h3 class="langicon">
+                Languages
+            </h3>
+            <div id="myBtnContainer">
+                <button class="btn active" id="firstcheck" onclick="filterSelection('all')">
+                    <label class="container">
+                        <input type="radio" name="filter" id="osx" >
+                        <span class="checkmark"></span>
+                        Show all
+                    </label>
+                </button>
+                <button class="btn" onclick="filterSelection('cpp'); wipteArrows();">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        C++
+                    </label>
+                </button>
+                <button class="btn" onclick="filterSelection('csharp'); wipteArrows();">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        C#
+                    </label>
+                </button>
+                <button class="btn" onclick="filterSelection('java'); wipteArrows();">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        Java
+                    </label>
+                </button>
+                <button class="btn" onclick="filterSelection('python'); wipteArrows();">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        Python
+                    </label>
+                </button>
+                <button class="btn" onclick="filterSelection('bash'); wipteArrows();">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        Bash
+                    </label>
+                </button>
+
+                <h3 class="iconEngine">
+                    Engines
+                </h3>
+                <button class="btn active" onclick="filterSelection('ue4'); wipteArrows();">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        UE4
+                    </label>
+                </button>
+                <button class="btn" onclick="filterSelection('unity'); wipteArrows();">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        Unity
+                    </label>
+                </button>
+            </div>
+        </div>
+        <footer>
+            <a href="https://www.linkedin.com/in/olivia-mikler/" target="_blank" class="fa fa-linkedin"
+                style="font-size:44px" rel="noopener noreferrer"></a>
+            <a href="https://github.com/MikloCO" class="fa fa-github" target="_blank" style="font-size:44px"
+                rel="noopener noreferrer"></a>
+            <a href="https://www.artstation.com/oliviamikler" class='fa fa-artstation' target="_blank"
+                style='font-size:44px' rel="noopener noreferrer"></a>
+            <br><br>
+            <div id="fetchkattisdata" class="tooltip">Current Kattis status
+                <p i class="tooltiptext">Kattis is a website for programmers to practice and compete with their skills.</p>
+            </div>
+            <div style="border: none; overflow: hidden; margin-top: -10px; max-width: 736px;">
+                <iframe scrolling="no" src="https://open.kattis.com/users/olivia-mikler">
+                </iframe>
+            </div>
+            <p id="websiteauthor">Website created by Olivia Mikler</p>
+        </footer>
+    </aside>
+
+
+    <aside id="phone">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h1 class="asideheaderfont">Olivia Mikler</h1>
+        <div class="container4">
+            <img id="profilepicture" src="/Media/ProfilePicture/me_profile.png" alt="Avatar" width="200" height="200">
+            <div class="overlay">
+                <div class="ingress">Passionate developer</div>
+            </div>
+        </div>
+        
+        <h1 class="asideheaderfont">BSc Game Development</h1>
+        <hr id="asideline">
+
+        <div id="contentFilterGroup">
+            <h2 id="filteronskill">FILTER ON SKILL</h2>
+            <h3 class="langicon">
+                Languages
+            </h3>
+            <div id="myBtnContainerPhone">
+                <button class="btnPhone active" id="osxbtn" onclick="filterPhoneSelection('all')">
+                    <label class="container">
+                        <input type="radio" id="allPhone" name="filter" checked>
+                        <span class="checkmark"></span>
+                        Show all
+                    </label>
+                </button>
+                <button class="btnPhone" onclick="filterPhoneSelection('cpp')">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        C++
+                    </label>
+                </button>
+                <button class="btnPhone" onclick="filterPhoneSelection('csharp')">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        C#
+                    </label>
+                </button>
+                <button class="btnPhone" onclick="filterPhoneSelection('java')">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        Java
+                    </label>
+                </button>
+                <button class="btnPhone" onclick="filterPhoneSelection('python')">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        Python
+                    </label>
+                </button>
+                <button class="btnPhone" onclick="filterPhoneSelection('bash')">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        Bash
+                    </label>
+                </button>
+
+                <h3 class="iconEngine">
+                    Engines
+                </h3>
+                <button class="btnPhone active" onclick="filterPhoneSelection('ue4');">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        UE4
+                    </label>
+                </button>
+                <button class="btnPhone" onclick="filterPhoneSelection('unity');">
+                    <label class="container">
+                        <input type="radio" name="filter">
+                        <span class="checkmark"></span>
+                        Unity
+                    </label>
+                </button>
+            </div>
+        </div>
+        <footer>
+            <a href="https://www.linkedin.com/in/olivia-mikler/" target="_blank" class="fa fa-linkedin"
+                style="font-size:44px" rel="noopener noreferrer"></a>
+            <a href="https://github.com/MikloCO" class="fa fa-github" target="_blank" style="font-size:44px"
+                rel="noopener noreferrer"></a>
+            <a href="https://www.artstation.com/oliviamikler" class='fa fa-artstation' target="_blank"
+                style='font-size:44px' rel="noopener noreferrer"></a>
+            <br><br>
+            <div id="fetchkattisdata" class="tooltip">Current Kattis status
+                <p i class="tooltiptext">Kattis is a website for programmers to practice and compete with their skills.</p>
+            </div>
+            <div style="border: none; overflow: hidden; margin-top: -10px; max-width: 736px;">
+                <iframe scrolling="no" src="https://open.kattis.com/users/olivia-mikler">
+                </iframe>
+            </div>
+            <p id="websiteauthor">Website created by Olivia Mikler</p>
+        </footer>
+    </aside>
+
+    <div class="groupcontentonpage">
+        <section>
+            <header>| OLIVIA MIKLER: DEVELOPER & ARTIST  <span id="hamburgermenu" onclick="openNav()"><p id ="hash">&#9776;</p></span></header>
+            <div class="groupicons">
+                <img class="skilledicons" src="Media/Icons/Topicons/java.png">
+                <img class="skilledicons" src="Media/Icons/Topicons/python.png">
+                <img class="skilledicons" src="Media/Icons/Topicons/cpp.png">
+                <img class="skilledicons" src="Media/Icons/Topicons/csharp.png">
+                <img class="skilledicons" src="Media/Icons/Topicons/unity.png">
+                <img class="skilledicons" src="Media/Icons/Topicons/ue4.png">
+            </div>
+            <div class="containerforcards">
+                <div class="horizontal-flex-container">
+                    <div class="wrapper-div" id="leftarrow" style="visibility: hidden;">
+                        <button class="arrow left" onclick="gotoleftbatch();countClickLeft();"></button>
+                    </div>
+                    <div class="horizontal-flex-container batch-one">
+                        <div class="card cpp ue4">
+                            <div class="polaroid">
+                                <img src="Media/Covers/artstation_thumbnail.png" alt="Life Is Strange" style="width:100%">
+                                <div class="cardborder">
+                                    <p>LIS fanart
+                                        <img src="Media/Icons/Stickers/cppsticker.png" class="stickers">
+                                        <img src="Media/Icons/Stickers/unrealenginesticker.png" class="stickers">
+                                    </p>
+                                    <button class="stickerbuttons"
+                                        onclick="window.open('https://www.artstation.com/artwork/KrxEyB', '_blank')"
+                                        ;>Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card cpp ue4">
+                            <div class="polaroid" id="fpsshooooter">
+                                <img src="Media/Icons/InteractiveIcons/muteicon.gif" id="mutebuttonfps"
+                                    class="audioclip audioclipwithsound">
+                                <video src="Media/Videoclips/fpsshooter.mp4" type="video/mp4" style="width: 100%;"
+                                    class="myvideo myvideowAudio" id="fpsshoot">
+                                </video>
+                                <div class="cardborder">
+                                    <p>First person shooter
+                                        <img src="Media/Icons/Stickers/cppsticker.png" class="stickers">
+                                        <img src="Media/Icons/Stickers/unrealenginesticker.png" class="stickers">
+                                    </p>
+                                    <button class="stickerbuttons"
+                                        onclick="window.open('https://github.com/MikloCO/BuildingEscape', '_blank')"
+                                        ;>Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card csharp unity">
+                            <div class="polaroid" id="citybuilder">
+                                <video src="Media/Videoclips/WebsitePolaroidCrop.mp4" type="video/mp4" style="width: 100%;"
+                                    class="myvideo"></video>
+                                <div class="cardborder">
+                                    <p>City builder
+                                        <img src="Media/Icons/Stickers/csharp.png" class="stickers">
+                                        <img src="Media/Icons/Stickers/unitysticker.png" class="stickers">
+                                    </p>
+                                    <button class="stickerbuttons"
+                                        onclick="window.open('https://github.com/MikloCO/CityBuilder', '_blank')" ;>Read
+                                        more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card java">
+                            <div class="polaroid" id="jstltool">
+                                <img src="Media/Icons/InteractiveIcons/muteicon.gif" id="mutebuttonpolaroid"
+                                    class="audioclip audioclipwithsound">
+                                <video src="Media/Videoclips/Texttojstlconvertervideo.mp4" type="video/mp4"
+                                    style="width: 100%;" class="myvideo myvideowAudio" id="jstlconverter"></video>
+                                <div class="cardborder">
+                                    <p>JSTL automation tool
+                                        <img src="Media/Icons/Stickers/java.png" class="stickers">
+                                    </p>
+                                    <button class="stickerbuttons"
+                                        onclick="window.open('https://github.com/MikloCO/TextToJSTLConverter', '_blank')"
+                                        ;>Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card csharp unity">
+                            <div class="polaroid">
+                                <video src="Media/Videoclips/npcphoneideaaa.mp4" type="video/mp4" style="width: 100%;"
+                                    class="myvideo myvideowAudio"></video>
+                                <div class="cardborder">
+                                    <p>NPC phone prototype
+                                        <img src="Media/Icons/Stickers/unitysticker.png" class="stickers">
+                                        <img src="Media/Icons/Stickers/csharp.png" class="stickers">
+                                    </p>
+                                    <button class="stickerbuttons"
+                                        onclick="window.open('html/Phone_Hello_Code.html', '_blank')" ;>View
+                                        sourcecode</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card csharp">
+                            <div class="polaroid">
+                                <img src="Media/Icons/InteractiveIcons/muteicon.gif" id="mutebuttonknight"
+                                    class="audioclip audioclipwithsound">
+                                <video src="Media/Videoclips/knightsuncrossedpath.mp4" type="video/mp4"
+                                    style="width: 100%;" class="myvideo myvideowAudio" id="knightclip"></video>
+                                <div class="cardborder">
+                                    <p>Knights uncrossed path algorithm
+                                        <img src="Media/Icons/Stickers/csharp.png" class="stickers">
+                                        <img src="Media/Icons/Stickers/vsstudio.png" class="stickers">
+                                    </p>
+                                    <button class="stickerbuttons" onclick="window.open('html/AI_Code.html', '_blank')"
+                                        ;>View sourcecode</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bash">
+                            <div class="polaroid" id="bashtool">
+                                <video src="Media/Videoclips/bashvideoo.mp4" type="video/mp4" style="width: 100%;"
+                                    class="myvideo myvideowAudio"></video>
+                                <div class="cardborder">
+                                    <p>Bash script talking with curl API
+                                        <img src="Media/Icons/Stickers/bash.png" class="stickers">
+                                    </p>
+                                    <button class="stickerbuttons"
+                                        onclick="window.open('html/bashscript.html', '_blank')" ;>Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card python">
+                            <div class="polaroid" id="bashtool">
+                                <video src="Media/Videoclips/pythonadvent.mp4" type="video/mp4" style="width: 100%;"
+                                    class="myvideo myvideowAudio"></video>
+                                <div class="cardborder">
+                                    <p>Advent of code 2020 solution
+                                        <img src="Media/Icons/Stickers/python.png" class="stickers">
+                                    </p>
+                                    <button class="stickerbuttons"
+                                        onclick="window.open('https://github.com/MikloCO/Kattis/blob/main/Python/Christmas_Calendar/Episode/main.py', '_blank')"
+                                        ;>Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-div">
+                        <button class="arrow right" onclick="gotorightbatch(); countClickRight();"></button>
+
+                    </div>
+                </div> <!-- horizontal-flex-container-->
+
+            </div> <!-- Container for cards-->
+        </section>
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="JS/onhoverplayvideo.js"></script>
+    <script src="JS/filterelements.js"></script>
+    <script src="JS/mobile_responsive.js"></script>
+   
+</body>
+
+</html>
