@@ -5,5 +5,5 @@ import glsl from 'vite-plugin-glsl';
 export default defineConfig({
     // Basic config goes here
     plugins: [glsl()],
-    base: '/',
+    base: '/MikloCO.github.io',
 });
