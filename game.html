@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nintendo gameboy</title>
+</head>
+
+<body>
+    <header>
+        <h1>Nintendo Gameboy</h1>
+        <nav>
+            <a href="index.html">Home page</a>
+            <a href="game.html">Nintendo Gameboy</a>
+
+        </nav>
+    </header>
+    <div id="keywords-panel">
+        <h3>Controls</h3>
+        <ul>
+            <li>(Pan) alt + ctrl + mouse click</li>
+            <li>(Rotate) mouse click + drag</li>
+            <li>(Zoom) scroll</li>
+            <li>(Move tetris vertically) ← →</li>
+            <li>(Move tetris horizontally) ↑ ↓</li>
+            <li>It also works to click physical arrows</li>
+        </ul>
+        <h3>Info</h3>
+        <ul>
+            <li>Modelled in Houdini</li>
+            <li>Textured in Substance Painter</li>
+            <li>Animated in Blender</li>
+            <li>Exported fr Blender as .glb</li>
+            <li>Rendered with <b>Three.js</b></li>
+            <li>Tetris blocks are procedurally drawn using <b>glsl</b> (shader)</li>
+            <li>Game state is passed to shader via <b>uniforms</b></li>
+            <li>Core game logic and state are managed in <b>JavaScript</b></li>
+
+        </ul>
+    </div>
+
+    <div class="game-container">
+        <section class="gameboymodel">
+        </section>
+
+        <div id="controls-container"></div>
+    </div>
+
+    <script type="module" src="/src/tetris-game.js"></script>
+</body>
+
+</html>

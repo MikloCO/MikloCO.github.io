@@ -1,0 +1,26 @@
+{
+  "name": "nintendo-gameboy-website",
+  "homepage": "MikloCO.github.io",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "vite": "^7.0.4",
+    "vite-plugin-glsl": "^1.5.1"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "motion": "^12.23.6",
+    "opentype.js": "^1.3.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.178.0"
+  }
+}
