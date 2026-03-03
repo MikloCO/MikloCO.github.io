@@ -24,6 +24,32 @@
 <a href="https://github.com/MikloCO" target="_blank" class="btn">
     <i class="fab fa-github"></i> GitHub
 </a>
+    <section id="wip" class="content-section">
+        <h1>Work In Progress</h1>
+        <h2>Houdini - Unreal - pipeline</h2>
+        <p>I’m currently developing an end-to-end procedural asset pipeline that generates stacked rocks in Houdini and prepares
+        them for seamless use in Unreal Engine. The system procedurally creates a high-poly mesh along with LOD0–LOD2
+        variations, and during cooking in TOPNet it generates structured per-asset metadata that defines how each rock should
+        behave downstream. A custom shelf tool validates the generated assets against technical constraints to ensure export
+        readiness, while a COP network produces unique textures for every rock. The assets are then exported in a predefined
+        folder structure driven by the metadata. On the Unreal side, I’m building a C++ plugin with a Slate UI that uses Python
+        under the hood to automate mesh import, apply LOD settings, and generate material instances based on the metadata. The
+        goal is to bridge procedural content creation and engine integration through a metadata-driven workflow that reduces
+        manual setup and enforces consistency across assets. </p>
+        <br>
+        <img src="Media/images/importer.gif" alt="Rock Importer" width="600">
+        <img src="Media/images/rocks.png" alt="Rock Importer" width="600">
+        <img src="Media/images/rocks_shapes.png" alt="Rock Importer" width="600">
+        <img src="Media/images/validator.png" alt="Rock Importer" width="600">
+        <img src="Media/images/mindmap.png" alt="Rock Importer" width="600">
+
+
+
+
+    
+    
+    </section>
+
     <section id="newest_project" class="content-section">
         <h1>Newest Project</h1>
         <h2>Playable Tetris on a gameboy 1989 with Three.js</h2>
